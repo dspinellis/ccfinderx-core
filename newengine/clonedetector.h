@@ -14,6 +14,7 @@
 #include <boost/thread.hpp>
 
 #include "../threadqueue/threadqueue.h"
+#include "../ccfx/ccfxcommon.h"
 
 #if defined _MSC_VER
 #undef max
