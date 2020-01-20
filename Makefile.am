@@ -17,7 +17,7 @@ common_CPPFLAGS = \
 	-DWSTRING_CONVERSION_SUPPORT \
 	-DREQUIRE_RNR
 
-common_LIBADD = -licule -licutu -licuio -licuuc -liculx -licudata -licui18n \
+common_LIBADD = -licutu -licuio -licuuc -licudata -licui18n \
 	-lboost_thread -lboost_system
 
 picosel_picosel_CPPFLAGS = $(common_CPPFLAGS) -O2 -fpermissive
