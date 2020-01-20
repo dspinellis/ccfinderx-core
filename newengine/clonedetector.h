@@ -517,7 +517,7 @@ private:
 				boost::uint64_t cloneSetReferenceNumber)
 		{
 			//const typename std:: vector<ElemType> &seq = refSeq();
-			size_t unitLength = getUnitLength();
+			size_t unitLength = this->getUnitLength();
 
 			for (size_t csi = 0; csi < cloneSet.size(); ++csi) {
 				const CloneSetItem &cs = cloneSet[csi];
