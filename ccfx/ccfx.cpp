@@ -2701,8 +2701,7 @@ int main(int argc, char *argv[])
 		return 0;
 	}
 
-	std::vector<std::string> argvec;
-	std::for_each(argv, argv + argc, boost::bind(&std::vector<std::string>::push_back, &argvec, _1));
+	std::vector<std::string> argvec(argv, argv + argc);
 	int r = expand_command_file(&argvec);
 	if (r != 0) {
 		return r;
